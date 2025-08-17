@@ -8,7 +8,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
 
 # dataset setup
-dataset_path = r'D:\classifier\clf-data'
+dataset_path = r'D:\classifier\classification_data'
 class_labels = ['empty', 'not_empty']
 
 features = []
@@ -52,3 +52,4 @@ print(f"{accuracy * 100:.2f}% accuracy on test set")
 # save model
 with open('svm_model.pkl', 'wb') as model_file:
     pickle.dump(best_svm, model_file)
+
